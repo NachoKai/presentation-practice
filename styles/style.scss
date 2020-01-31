@@ -30,6 +30,8 @@ ul {
 }
 
 .wallpaper {
+    animation-name: zoomOut;
+    animation-timing-function: ease-out;
     display: block;
     height: 100%;
     left: 0;
@@ -38,7 +40,7 @@ ul {
     background-image: url("../img/wallpaperspace.jpg");
     background-position: center;
     background-size: cover;
-    opacity: 0.5;
+    opacity: 0.2;
     position: fixed;
 }
 
@@ -129,6 +131,8 @@ ul {
 }
 
 .name {
+    animation-name: slideDown;
+    animation-delay: 100ms;
     font-size: 2.25rem;
     line-height: 1.125;
     margin-bottom: 0.5rem;
@@ -142,11 +146,15 @@ ul {
 }
 
 .job {
+    animation-name: slideUp;
+    animation-delay: 200ms;
     color: #ffe479;
     font-size: 0.75rem;
 }
 
 .hr {
+    animation-name: fillUp;
+    animation-delay: 300ms;
     background-color: #ff470f;
     border: none;
     content: "";
@@ -159,9 +167,13 @@ ul {
 
 .description {
     font-size: 1.2rem;
+    animation-name: slideUp;
+    animation-delay: 400ms;
 }
 
 .contact {
+    animation-name: bounceIn;
+    animation-delay: 600ms;
     display: inline-block;
     margin-top: 1.5rem;
     vertical-align: top;
@@ -337,42 +349,12 @@ ul {
     animation-timing-function: cubic-bezier(0, 0.5, 0.25, 1.25);
 }
 
-.wallpaper {
-    animation-name: zoomOut;
-    animation-timing-function: ease-out;
-}
-
 .picture-shadow {
     animation-name: picShadow;
 }
 
 .picture-image {
     animation-name: picImage;
-}
-
-.name {
-    animation-name: slideDown;
-    animation-delay: 100ms;
-}
-
-.job {
-    animation-name: slideUp;
-    animation-delay: 200ms;
-}
-
-.hr {
-    animation-name: fillUp;
-    animation-delay: 300ms;
-}
-
-.description {
-    animation-name: slideUp;
-    animation-delay: 400ms;
-}
-
-.contact {
-    animation-name: bounceIn;
-    animation-delay: 600ms;
 }
 
 .social li {
@@ -383,7 +365,7 @@ ul {
 
 .picture-image {
     animation-name: picImage;
-    animation-delay: 500ms;
+    animation-delay: 550ms;
 }
 
 .picture-shadow {
@@ -391,29 +373,26 @@ ul {
     animation-name: picShadow;
 }
 
-.social li:nth-child(1) {
-    animation-delay: 800ms;
-}
+.social {
+    li:nth-child(1) {
+        animation-delay: 800ms;
+    }
 
-.social li:nth-child(2) {
-    animation-delay: 900ms;
-}
+    li:nth-child(2) {
+        animation-delay: 900ms;
+    }
 
-.social li:nth-child(3) {
-    animation-delay: 1s;
-}
+    li:nth-child(3) {
+        animation-delay: 1s;
+    }
 
-.social li:nth-child(4) {
-    animation-delay: 1.1s;
-}
+    li:nth-child(4) {
+        animation-delay: 1.1s;
+    }
 
-.social li:nth-child(5) {
-    animation-delay: 1.2s;
-}
-
-.wallpaper {
-    animation-name: zoomOut;
-    animation-timing-function: ease-out;
+    li:nth-child(5) {
+        animation-delay: 1.2s;
+    }
 }
 
 .wallpaper.is-loaded {

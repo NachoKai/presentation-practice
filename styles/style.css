@@ -35,6 +35,10 @@ ul {
 }
 
 .wallpaper {
+  -webkit-animation-name: zoomOut;
+          animation-name: zoomOut;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
   display: block;
   height: 100%;
   left: 0;
@@ -43,7 +47,7 @@ ul {
   background-image: url("../img/wallpaperspace.jpg");
   background-position: center;
   background-size: cover;
-  opacity: 0.5;
+  opacity: 0.2;
   position: fixed;
 }
 
@@ -153,6 +157,10 @@ ul {
 }
 
 .name {
+  -webkit-animation-name: slideDown;
+          animation-name: slideDown;
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
   font-size: 2.25rem;
   line-height: 1.125;
   margin-bottom: 0.5rem;
@@ -166,11 +174,19 @@ ul {
 }
 
 .job {
+  -webkit-animation-name: slideUp;
+          animation-name: slideUp;
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
   color: #ffe479;
   font-size: 0.75rem;
 }
 
 .hr {
+  -webkit-animation-name: fillUp;
+          animation-name: fillUp;
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
   background-color: #ff470f;
   border: none;
   content: "";
@@ -184,9 +200,17 @@ ul {
 
 .description {
   font-size: 1.2rem;
+  -webkit-animation-name: slideUp;
+          animation-name: slideUp;
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
 }
 
 .contact {
+  -webkit-animation-name: bounceIn;
+          animation-name: bounceIn;
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
   display: inline-block;
   margin-top: 1.5rem;
   vertical-align: top;
@@ -491,13 +515,6 @@ ul {
           animation-timing-function: cubic-bezier(0, 0.5, 0.25, 1.25);
 }
 
-.wallpaper {
-  -webkit-animation-name: zoomOut;
-          animation-name: zoomOut;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-}
-
 .picture-shadow {
   -webkit-animation-name: picShadow;
           animation-name: picShadow;
@@ -506,41 +523,6 @@ ul {
 .picture-image {
   -webkit-animation-name: picImage;
           animation-name: picImage;
-}
-
-.name {
-  -webkit-animation-name: slideDown;
-          animation-name: slideDown;
-  -webkit-animation-delay: 100ms;
-          animation-delay: 100ms;
-}
-
-.job {
-  -webkit-animation-name: slideUp;
-          animation-name: slideUp;
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
-}
-
-.hr {
-  -webkit-animation-name: fillUp;
-          animation-name: fillUp;
-  -webkit-animation-delay: 300ms;
-          animation-delay: 300ms;
-}
-
-.description {
-  -webkit-animation-name: slideUp;
-          animation-name: slideUp;
-  -webkit-animation-delay: 400ms;
-          animation-delay: 400ms;
-}
-
-.contact {
-  -webkit-animation-name: bounceIn;
-          animation-name: bounceIn;
-  -webkit-animation-delay: 600ms;
-          animation-delay: 600ms;
 }
 
 .social li {
@@ -555,8 +537,8 @@ ul {
 .picture-image {
   -webkit-animation-name: picImage;
           animation-name: picImage;
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
+  -webkit-animation-delay: 550ms;
+          animation-delay: 550ms;
 }
 
 .picture-shadow {
@@ -589,13 +571,6 @@ ul {
 .social li:nth-child(5) {
   -webkit-animation-delay: 1.2s;
           animation-delay: 1.2s;
-}
-
-.wallpaper {
-  -webkit-animation-name: zoomOut;
-          animation-name: zoomOut;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
 }
 
 .wallpaper.is-loaded {
