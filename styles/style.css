@@ -15,7 +15,7 @@ html {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#240cac), to(#54a3e4));
   background-image: linear-gradient(to bottom right, #240cac, #54a3e4);
   color: #fff;
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   min-height: 100vh;
@@ -152,8 +152,8 @@ ul {
 }
 
 .picture-image:hover {
-  width: 325px;
-  height: 325px;
+  -webkit-box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.5), -20px -20px 60px rgba(0, 0, 0, 0.5);
+          box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.5), -20px -20px 60px rgba(0, 0, 0, 0.5);
 }
 
 .name {
@@ -168,7 +168,7 @@ ul {
 
 .job,
 .button {
-  font-family: "Montserrat", "Quicksand", sans-serif;
+  font-family: 'Montserrat', 'Quicksand', sans-serif;
   letter-spacing: 0.3em;
   text-transform: uppercase;
 }
@@ -189,7 +189,7 @@ ul {
           animation-delay: 300ms;
   background-color: #ff470f;
   border: none;
-  content: "";
+  content: '';
   height: 1px;
   margin-bottom: 1.5rem;
   margin-top: 1.5rem;
@@ -595,4 +595,3 @@ ul {
 .picture-image {
   opacity: 0;
 }
-/*# sourceMappingURL=style.css.map */
